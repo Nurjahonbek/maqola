@@ -41,9 +41,10 @@ export function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
+                {/* <BookOpen className="w-5 h-5 text-primary-foreground" /> */}
+                <img src="./Logo.png" className="h-auto w-auto" />
               </div>
-              <span className="text-xl font-bold text-foreground">Maqola</span>
+              <span className="text-xl font-bold text-foreground">Fer.Teach</span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-xs">
               O'zbekistondagi eng yirik ilmiy maqolalar va jurnallar platformasi.

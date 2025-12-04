@@ -65,7 +65,7 @@ export const translations: Translations = {
 
   // Features
   featuresBadge: { uz: "Afzalliklar", ru: "Преимущества", en: "Features" },
-  featuresTitle: { uz: "Nega aynan Maqola?", ru: "Почему именно Maqola?", en: "Why Maqola?" },
+  featuresTitle: { uz: "Nega aynan Fer.Teach?", ru: "Почему именно Fer.Teach?", en: "Why Fer.Teach?" },
   featuresDescription: {
     uz: "Platformamiz sizga eng yaxshi imkoniyatlarni taqdim etadi",
     ru: "Наша платформа предоставляет вам лучшие возможности",

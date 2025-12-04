@@ -34,12 +34,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
+                {/* <BookOpen className="w-5 h-5 text-primary-foreground" /> */}
+                <img src="./Logo.png" className="h-auto w-auto" />
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
             </div>
-            <span className="text-xl font-bold text-foreground">Maqola</span>
+            <span className="text-xl font-bold text-foreground">Fer.Teach</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -62,7 +63,7 @@ export function Header() {
             </Button>
 
             <Button variant="ghost" size="icon" onClick={toggleTheme} className="text-muted-foreground">
-              {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {theme === "dark" ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
             </Button>
 
             <DropdownMenu>
@@ -87,7 +88,12 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">{t("publishArticle")}</Button>
+            <Button
+              onClick={() => window.open("https://t.me/ferteach_uz", "_blank")}
+               className="bg-primary hover:bg-primary/90 text-primary-foreground">
+               {t("publishArticle")}
+                </Button>
+
           </div>
 
           {/* Mobile Menu Button */}

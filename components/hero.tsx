@@ -86,7 +86,7 @@ export function Hero() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6">
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-5">
                   {t("searchBtn")}
                 </Button>
               </div>

@@ -12,7 +12,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Maqola - Ilmiy Maqolalar Platformasi",
   description: "O'zbekiston va xalqaro ilmiy jurnallar, konferensiya materiallari, tadqiqotlar bazasi",
-    generator: 'v0.app'
+  icons: {
+    icon: "./Logo.png",
+  },
 }
 
 export default function RootLayout({
@@ -22,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uz" suppressHydrationWarning>
+
       <body className={`font-sans antialiased`}>
         <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>
